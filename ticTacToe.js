@@ -1,20 +1,23 @@
 // TIC TAC TOE jakeholtz 6/19/2017
+var ticTacToe = {};
 
-var title = ( 'TIC TAC TOE')
-var players = ['person1', 'person2'];
-var turn = '(Turn: ' + players[0] + ')';
+ticTacToe.title = ( 'TIC TAC TOE')
+ticTacToe.players = ['person1', 'person2'];
+ticTacToe.turn = '(Turn: ' + ticTacToe.players[0] + ')';
 
-var line = (' _____');
-var top = ('|_|_|_|');
-var mid = ('|_|_|_|');
-var bot = ('|_|_|_|');
+ticTacToe.line = (' _____');
+ticTacToe.top = ['|_|_|_|', [null, null, null]];
+ticTacToe.mid = ['|_|_|_|', [null, null, null]];
+ticTacToe.bot = ['|_|_|_|', [null, null, null]];
 
-console.log(title);
-console.log(turn);
-console.log(line);
-console.log(top);
-console.log(mid);
-console.log(bot);
+console.log(ticTacToe.title);
+console.log(ticTacToe.turn);
+console.log(ticTacToe.line);
+console.log(ticTacToe.top);
+console.log(ticTacToe.mid);
+console.log(ticTacToe.bot);
+
+module.exports = ticTacToe;
 
 //  _____
 // |_|_|_|
